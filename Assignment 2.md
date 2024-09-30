@@ -7,3 +7,4 @@
    'OVERLAY':'C:/Users/localuser/Documents/GIS data/segovia_province.gpkg|layername=prov_cyl_recintos',
    'OUTPUT':'TEMPORARY_OUTPUT'})
    ```
+3. Dissolve the solar exclusion in segovia
