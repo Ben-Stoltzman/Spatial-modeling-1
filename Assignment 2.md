@@ -1,4 +1,4 @@
-# Exclusion of solar panel areas in Sewgovia 
+# Exclusion of solar panel areas in Segovia 
 1. Exporting the selected feature of segovia as geopackage
 2. clipping solar exclusion with segobvia province
    ```python
@@ -8,3 +8,7 @@
    'OUTPUT':'TEMPORARY_OUTPUT'})
    ```
 3. Dissolve the solar exclusion in segovia
+   ```python
+    processing.run("native:dissolve", {'INPUT':'C:\\Users\\localuser\\Documents\\GIS data\\solar_exclusion_segovia.gpkg|layername=solar exclusion segovia','FIELD':[],'SEPARATE_DISJOINT':False,'OUTPUT':'TEMPORARY_OUTPUT'})
+   ```
+   => manually made permanenet with the name: `solar_exclusion_Segovia_dissolved.gpkg`
