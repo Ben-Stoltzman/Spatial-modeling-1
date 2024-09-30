@@ -13,7 +13,7 @@ WMS= http://mcsncyl.itacyl.es/arcgis/services/MCSNCyL/MapServer/WMSServer?reques
 WCS= http://mcsncyl.itacyl.es/arcgis/services/MCSNCyL/MapServer/WCSServer?request=GetCapabilities&service=WCS
 This layer shows the different types of crops grown in Castilla y Leon, this is helpful in understanding where Topillo can be located in the highest density based on crop preference:
 Projection: EPSG:4326 - WGS 84
-Resolution: Unnavailable 
+Resolution: CRS:84
 License: Unnavailable
 - 
 Layer 3: 2022 - Actually irrigated areas map of Castile and León in 2022
