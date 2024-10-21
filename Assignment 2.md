@@ -12,4 +12,10 @@
    processing.run("native:dissolve", {'INPUT':'/Users/benstoltzman/Desktop/QGIS/Assignment 2/sg_livestock.gpkg|layername=segovia_livestock','FIELD':[],'SEPARATE_DISJOINT':False,'OUTPUT':'ogr:dbname=\'/Users/benstoltzman/Desktop/QGIS/Assignment 2/sg_livestock.gpkg\' table="segovia_livestock_ds" (geom)'})
 ```
 
-manually exported with the file name: ``sg_livestock.gpkg``
+```
+
+4. Downloaded WMS file of cultivated land in Castilla y Leon
+   link for download: `https://mcsncyl.itacyl.es/arcgis/services/MCSNCyL/MapServer/WMSServer?`
+     I was unable to clip the layeer to just the Segovia region, multiple errors kept appearing
+
+5. Downloaded WMS file called: 
