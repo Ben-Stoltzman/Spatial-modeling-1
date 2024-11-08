@@ -14,3 +14,8 @@ create buffer
 Added tif file:
 URL: `https://livingatlas.arcgis.com/landcoverexplorer/#mapCenter=-3.28600%2C31.34000%2C3&mode=step&timeExtent=2017%2C2021&year=2022&downloadMode=true`
 tif file: 
+
+Added zonal histogram
+```python
+processing.run("native:zonalhistogram", {'INPUT_RASTER':'C:/Users/localuser/Documents/GIS data/30T_20230101-20240101.tif','RASTER_BAND':1,'INPUT_VECTOR':'C:\\Users\\localuser\\Documents\\GIS data\\3km_buffer_fieldwork_locations.gpkg|layername=buffered','COLUMN_PREFIX':'LC_','OUTPUT':'ogr:dbname=\'C:/Users/localuser/Documents/GIS data/3km_buffer_fieldwork_locations_LC_HIST.gpkg\' table="LC_HIST" (geom)'})
+```
