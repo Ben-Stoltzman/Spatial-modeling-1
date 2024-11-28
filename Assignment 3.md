@@ -9,3 +9,4 @@ processing.run("gdal:cliprasterbymasklayer", {'INPUT':'/vsizip/C:/Users/localuse
 ```
 
 The importance of this was to determine the Productivity of farmlands where Cattle roads cross over and too see which specific area within the province we believe is suitable to start our project. 
+We identified a region in Monterubio Coordinates: `40°49'06.5"N 4°21'21.9"W`
