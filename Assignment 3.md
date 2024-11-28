@@ -13,3 +13,8 @@ processing.run("gdal:cliprasterbymasklayer", {'INPUT':'/vsizip/C:/Users/localuse
 The importance of this was to determine the Productivity of farmlands where Cattle roads cross over and too see which specific area within the province we believe is suitable to start our project. Bird species such as Barn Owls, Common kestrels, and 
 We identified a region in Monterrubio Coordinates: `40°49'06.5"N 4°21'21.9"W` where the cattle road intersects through a Red Natura 2000 ZEPA zone, which I downloaded from `https://idecyl.jcyl.es/geonetwork/srv/spa/catalog.search#/metadata/SPAGOBCYLMNADTSPSZEC`.
 This is important since in order for predators to return to our rewilded sites, there needs to be already established populations nearby. I identified that the productivity was lower within croplands to the left of the cattle road and this is where we believe our project could be piloted. 
+
+The next file i added was the Farm land field margins in order to understand the primary productivity of these borders and then added a 3m buffer around these borders, where rewilding will take place.
+```python
+processing.run("native:buffer", {'INPUT':'farm_borders_M.gpkg|layername=farm_borders','DISTANCE':3,'SEGMENTS':5,'END_CAP_STYLE':0,'JOIN_STYLE':0,'MITER_LIMIT':2,'DISSOLVE':False,'SEPARATE_DISJOINT':False,'OUTPUT':'TEMPORARY_OUTPUT'})
+``
