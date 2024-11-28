@@ -17,4 +17,8 @@ This is important since in order for predators to return to our rewilded sites, 
 The next file i added was the Farm land field margins in order to understand the primary productivity of these borders and then added a 3m buffer around these borders, where rewilding will take place.
 ```python
 processing.run("native:buffer", {'INPUT':'farm_borders_M.gpkg|layername=farm_borders','DISTANCE':3,'SEGMENTS':5,'END_CAP_STYLE':0,'JOIN_STYLE':0,'MITER_LIMIT':2,'DISSOLVE':False,'SEPARATE_DISJOINT':False,'OUTPUT':'TEMPORARY_OUTPUT'})
-``
+```
+
+# Buffer with our cattle road and farm borders and percent of biodiveristy needed
+
+
