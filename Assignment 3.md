@@ -23,7 +23,8 @@ processing.run("native:buffer", {'INPUT':'farm_borders_M.gpkg|layername=farm_bor
 # site 2
 
 The first layer i added was the Land cover map of Spain from ESRI downloaded from: `https://livingatlas.arcgis.com/landcoverexplorer/#mapCenter=55.24574%2C25.06542%2C11&mode=step&timeExtent=2017%2C2023&year=2023&downloadMode=true`
-I then clipped the file to be within the Segovia province as the focus will be on the Monterrubio site
+I then clipped the file to be within the Segovia province as the focus will be on the Monterrubio site. 
+I then had to copy the orignal style from the map and apply it to the clipped version so show the same symbology.
 
 
 
