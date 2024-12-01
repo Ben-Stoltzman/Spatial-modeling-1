@@ -20,6 +20,9 @@ The next file I added was the Farmland field margins in order to understand the 
 processing.run("native:buffer", {'INPUT':'farm_borders_M.gpkg|layername=farm_borders','DISTANCE':3,'SEGMENTS':5,'END_CAP_STYLE':0,'JOIN_STYLE':0,'MITER_LIMIT':2,'DISSOLVE':False,'SEPARATE_DISJOINT':False,'OUTPUT':'TEMPORARY_OUTPUT'})
 ```
 
-# Buffer with our cattle road and farm borders and percent of biodiveristy needed
+# site 2
+
+The first layer i added was the Land cover map of Spain from ESRI downloaded from: `https://livingatlas.arcgis.com/landcoverexplorer/#mapCenter=55.24574%2C25.06542%2C11&mode=step&timeExtent=2017%2C2023&year=2023&downloadMode=true`
+
 
 
