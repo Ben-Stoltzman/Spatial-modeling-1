@@ -35,7 +35,11 @@ I then added the same livestock corridor data, clipped it to Segovia province an
 ```python
 processing.run("native:buffer", {'INPUT':'Livestock_roads_Segovia.gpkg|layername=livestock_roads_segovia','DISTANCE':2000,'SEGMENTS':5,'END_CAP_STYLE':0,'JOIN_STYLE':0,'MITER_LIMIT':2,'DISSOLVE':False,'SEPARATE_DISJOINT':False,'OUTPUT':'TEMPORARY_OUTPUT'})
 ```
-I then clipped the landcover map to show only within the buffers. 
+I then changed the symbology of the buffers to have a low opacity so to clearly see the distance that the buffers on the cattle roads interact with the surrounding environments. 
+
+Questions:
+1. I really would like to know how I could clip a certain part or distance of the cattle road to be able to do my geoprocessing with, for example 10km of the cattle road that passes through Monterrubio.
+2. I would also like to be able to clip the landcover map to display only within the 2km buffers, as I wanted to work out the percent of the the different landcovers that the buffer contains to assess the probability that species would use these rewilded sites based on the amount of native vegatation already present. 
 
 
 
