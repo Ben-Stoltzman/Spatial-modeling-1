@@ -21,6 +21,10 @@ processing.run("native:buffer", {'INPUT':'farm_borders_M.gpkg|layername=farm_bor
 ```
 The importance of this map was to show the high primary productivity (indicated by dark green) in g C/m²/year. With the high primary productivity within the Red Natura 2000 site being close to our piloted site it would most likely ensure a higher probability of species 
 
+[Map 1 Assignment 3.pdf](https://github.com/user-attachments/files/17969888/Map.1.Assignment.3.pdf)
+
+
+
 # 2km buffer around Monterrubio site 
 
 The first layer I added was the Land cover map of Spain from ESRI downloaded from: `https://livingatlas.arcgis.com/landcoverexplorer/#mapCenter=55.24574%2C25.06542%2C11&mode=step&timeExtent=2017%2C2023&year=2023&downloadMode=true`
@@ -29,8 +33,9 @@ I then had to copy the orignal style from the map and apply it to the clipped ve
 
 I then added the same livestock corridor data, clipped it to Segovia province and created 2km buffers around these lkivesock corridors. This 2km was suggested as the correct size for animal species, especially bird species in surrounding protected areas to be able to move into these rewilded livestock corridors. 
 ```python
-processing.run("native:buffer", {'INPUT':'C:/Users/localuser/Downloads/znie_cyl_vvpp_ejes (1).gpkg|layername=znie_cyl_vvpp_ejes','DISTANCE':2000,'SEGMENTS':5,'END_CAP_STYLE':0,'JOIN_STYLE':0,'MITER_LIMIT':2,'DISSOLVE':False,'SEPARATE_DISJOINT':False,'OUTPUT':'TEMPORARY_OUTPUT'})
+processing.run("native:buffer", {'INPUT':'Livestock_roads_Segovia.gpkg|layername=livestock_roads_segovia','DISTANCE':2000,'SEGMENTS':5,'END_CAP_STYLE':0,'JOIN_STYLE':0,'MITER_LIMIT':2,'DISSOLVE':False,'SEPARATE_DISJOINT':False,'OUTPUT':'TEMPORARY_OUTPUT'})
 ```
+I then clipped the landcover map to show only within the buffers. 
 
 
 
