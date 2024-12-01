@@ -27,7 +27,7 @@ The first layer I added was the Land cover map of Spain from ESRI downloaded fro
 I then clipped the file to be within the Segovia province as the focus will be on the Monterrubio site. 
 I then had to copy the orignal style from the map and apply it to the clipped version so show the same symbology.
 
-I then added the same livestock corridor data and created 2km buffers around these lkivesock corridors. This 2km was suggested as the correct size for animal species, especially bird species in surrounding protected areas to be able to move into these rewilded livestock corridors. 
+I then added the same livestock corridor data, clipped it to Segovia province and created 2km buffers around these lkivesock corridors. This 2km was suggested as the correct size for animal species, especially bird species in surrounding protected areas to be able to move into these rewilded livestock corridors. 
 ```python
 processing.run("native:buffer", {'INPUT':'C:/Users/localuser/Downloads/znie_cyl_vvpp_ejes (1).gpkg|layername=znie_cyl_vvpp_ejes','DISTANCE':2000,'SEGMENTS':5,'END_CAP_STYLE':0,'JOIN_STYLE':0,'MITER_LIMIT':2,'DISSOLVE':False,'SEPARATE_DISJOINT':False,'OUTPUT':'TEMPORARY_OUTPUT'})
 ```
