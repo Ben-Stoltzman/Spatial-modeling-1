@@ -1,7 +1,7 @@
 # Monterrubio Site 
 
 The first layers that I added were:
-1. Cattle roads `https://idecyl.jcyl.es/geonetwork/srv/spa/catalog.search#/metadata/SPAGOBCYLMNADTSAMVPE`
+1. Livestock corridors `https://idecyl.jcyl.es/geonetwork/srv/spa/catalog.search#/metadata/SPAGOBCYLMNADTSAMVPE`
 2. _Microtus Arvalis_ Distribution `https://www.gbif.org/occurrence/map?taxon_key=2438606&gadm_gid=ESP.5_1`
 3. Medium Resolution Net Primary Production `https://sdi.eea.europa.eu/catalogue/srv/eng/catalog.search#/metadata/47e902f8-8237-415b-91fc-6d1522b11417`
 
@@ -26,6 +26,14 @@ The importance of this map was to show the high primary productivity (indicated 
 The first layer I added was the Land cover map of Spain from ESRI downloaded from: `https://livingatlas.arcgis.com/landcoverexplorer/#mapCenter=55.24574%2C25.06542%2C11&mode=step&timeExtent=2017%2C2023&year=2023&downloadMode=true`
 I then clipped the file to be within the Segovia province as the focus will be on the Monterrubio site. 
 I then had to copy the orignal style from the map and apply it to the clipped version so show the same symbology.
+
+I then added the same livestock corridor data and created 2km buffers around these lkivesock corridors. This 2km was suggested as the correct size for animal species, especially bird species in surrounding protected areas to be able to move into these rewilded livestock corridors. 
+```python
+processing.run("native:buffer", {'INPUT':'C:/Users/localuser/Downloads/znie_cyl_vvpp_ejes (1).gpkg|layername=znie_cyl_vvpp_ejes','DISTANCE':2000,'SEGMENTS':5,'END_CAP_STYLE':0,'JOIN_STYLE':0,'MITER_LIMIT':2,'DISSOLVE':False,'SEPARATE_DISJOINT':False,'OUTPUT':'TEMPORARY_OUTPUT'})
+```
+
+
+
 
 
 
