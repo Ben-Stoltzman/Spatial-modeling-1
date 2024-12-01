@@ -25,13 +25,13 @@ The importance of this map was to show the high primary productivity (indicated 
 
 
 
-# 2km buffer around Monterrubio site 
+# Map 2, 2km buffer around Monterrubio site to assess rewilding suitability near protected areas 
 
 The first layer I added was the Land cover map of Spain from ESRI downloaded from: `https://livingatlas.arcgis.com/landcoverexplorer/#mapCenter=55.24574%2C25.06542%2C11&mode=step&timeExtent=2017%2C2023&year=2023&downloadMode=true`
 I then clipped the file to be within the Segovia province as the focus will be on the Monterrubio site. 
 I then had to copy the orignal style from the map and apply it to the clipped version so show the same symbology.
 
-I then added the same livestock corridor data, clipped it to Segovia province and created 2km buffers around these lkivesock corridors. This 2km was suggested as the correct size for animal species, especially bird species in surrounding protected areas to be able to move into these rewilded livestock corridors. 
+I then added the same livestock corridor data, clipped it to Segovia province and created 2km buffers around these livesock corridors. This 2km was suggested as the correct size for animal species, especially bird species in surrounding protected areas to be able to move into these rewilded livestock corridors. 
 ```python
 processing.run("native:buffer", {'INPUT':'Livestock_roads_Segovia.gpkg|layername=livestock_roads_segovia','DISTANCE':2000,'SEGMENTS':5,'END_CAP_STYLE':0,'JOIN_STYLE':0,'MITER_LIMIT':2,'DISSOLVE':False,'SEPARATE_DISJOINT':False,'OUTPUT':'TEMPORARY_OUTPUT'})
 ```
