@@ -19,7 +19,7 @@ The next file I added was the Farmland field margins in order to understand the 
 ```python
 processing.run("native:buffer", {'INPUT':'farm_borders_M.gpkg|layername=farm_borders','DISTANCE':3,'SEGMENTS':5,'END_CAP_STYLE':0,'JOIN_STYLE':0,'MITER_LIMIT':2,'DISSOLVE':False,'SEPARATE_DISJOINT':False,'OUTPUT':'TEMPORARY_OUTPUT'})
 ```
-The importance of this map was to show the high primary productivity (indicated by dark green) in g C/m²/year. With the high primary productivity within the Red Natura 2000 site being close to our piloted site it would most likely ensure a higher probability of species 
+The importance of this map was to show the high primary productivity (indicated by dark green) in g C/m²/year. With the high primary productivity within the Red Natura 2000 site being close to our piloted site it would most likely ensure a higher probability of species moving to the rewilded site. Higher primary productivity would show more stable ecosystems. 
 
 [Map 1 Assignment 3.pdf](https://github.com/user-attachments/files/17969888/Map.1.Assignment.3.pdf)
 
@@ -36,10 +36,15 @@ I then added the same livestock corridor data, clipped it to Segovia province an
 processing.run("native:buffer", {'INPUT':'Livestock_roads_Segovia.gpkg|layername=livestock_roads_segovia','DISTANCE':2000,'SEGMENTS':5,'END_CAP_STYLE':0,'JOIN_STYLE':0,'MITER_LIMIT':2,'DISSOLVE':False,'SEPARATE_DISJOINT':False,'OUTPUT':'TEMPORARY_OUTPUT'})
 ```
 I then changed the symbology of the buffers to have a low opacity so to clearly see the distance that the buffers on the cattle roads interact with the surrounding environments. 
+The importance of this map was to understand the surrounding ecosystems and land use to determine whether this site ould be suitable to start rewilding. 
+
+[Map 2.pdf](https://github.com/user-attachments/files/17969977/Map.2.pdf)
+
 
 Questions:
-1. I really would like to know how I could clip a certain part or distance of the cattle road to be able to do my geoprocessing with, for example 10km of the cattle road that passes through Monterrubio.
-2. I would also like to be able to clip the landcover map to display only within the 2km buffers, as I wanted to work out the percent of the the different landcovers that the buffer contains to assess the probability that species would use these rewilded sites based on the amount of native vegatation already present. 
+1. I really would like to know how I could clip a certain part or distance of the cattle road to be able to do my geoprocessing with, for example 10km of the cattle road that passes through Monterrubio and not all the cattle roads.
+   
+2. I would also like to be able to clip the landcover map to display only within the 2km buffers, as I wanted to work out the percent of the the different landcovers that the buffer contains to assess the probability that species would use these rewilded sites based on the amount of native vegatation already present. I remember we did something similar in class and we displayed the information on excel. 
 
 
 
