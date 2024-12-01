@@ -19,10 +19,11 @@ The next file I added was the Farmland field margins in order to understand the 
 ```python
 processing.run("native:buffer", {'INPUT':'farm_borders_M.gpkg|layername=farm_borders','DISTANCE':3,'SEGMENTS':5,'END_CAP_STYLE':0,'JOIN_STYLE':0,'MITER_LIMIT':2,'DISSOLVE':False,'SEPARATE_DISJOINT':False,'OUTPUT':'TEMPORARY_OUTPUT'})
 ```
+The importance of this map was to show the high primary productivity (indicated by dark green) in g C/m²/year. With the high primary productivity within the Red Natura 2000 site being close to our piloted site it would most likely ensure a higher probability of species 
 
-# site 2
+# 2km buffer around Monterrubio site 
 
-The first layer i added was the Land cover map of Spain from ESRI downloaded from: `https://livingatlas.arcgis.com/landcoverexplorer/#mapCenter=55.24574%2C25.06542%2C11&mode=step&timeExtent=2017%2C2023&year=2023&downloadMode=true`
+The first layer I added was the Land cover map of Spain from ESRI downloaded from: `https://livingatlas.arcgis.com/landcoverexplorer/#mapCenter=55.24574%2C25.06542%2C11&mode=step&timeExtent=2017%2C2023&year=2023&downloadMode=true`
 I then clipped the file to be within the Segovia province as the focus will be on the Monterrubio site. 
 I then had to copy the orignal style from the map and apply it to the clipped version so show the same symbology.
 
