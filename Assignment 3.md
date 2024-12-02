@@ -3,7 +3,8 @@
 The first layers that I added were:
 1. Livestock corridors `https://idecyl.jcyl.es/geonetwork/srv/spa/catalog.search#/metadata/SPAGOBCYLMNADTSAMVPE`
 2. _Microtus Arvalis_ Distribution `https://www.gbif.org/occurrence/map?taxon_key=2438606&gadm_gid=ESP.5_1`
-3. Medium Resolution Net Primary Production `https://sdi.eea.europa.eu/catalogue/srv/eng/catalog.search#/metadata/47e902f8-8237-415b-91fc-6d1522b11417`
+   - Citation: `GBIF.org (20 October 2024) GBIF Occurrence Download https://doi.org/10.15468/dl.9hm759`
+4. Medium Resolution Net Primary Production `https://sdi.eea.europa.eu/catalogue/srv/eng/catalog.search#/metadata/47e902f8-8237-415b-91fc-6d1522b11417`
    - Citation: `(2023). Medium Resolution Net Primary Production. https://sdi.eea.europa.eu/catalogue/srv/api/records/47e902f8-8237-415b-91fc-6d1522b11417`
 
 Then I clipped the Medium Resolution Net Primary Production to the Segovia province 
